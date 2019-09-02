@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "MuseoSans";
+  src: url("../fonts/museosans.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansRegular";
+  src: url("../fonts/museosans2.ttf");
+}
+
+* {
+  font-family: "MuseoSansRegular";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Efecto Gris */
+
+img:not(#imagen-parallax):not(#logo) {
+  filter: gray;
+  -webkit-filter: grayscale(100%);
+  -webkit-transition: all 0.6s ease;
+  -webkit-backface-visibility: hidden;
+}
+
+img:hover:not(#imagen-parallax):not(#logo) {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+/* Botones Slider */
+
+.slider .indicators .indicator-item.active {
+  background-color: #ecc829;
+}
+
+/* Logo Navbar */
+
+a.brand-logo {
+  width: 50%;
+  display: flex;
+}
+
+#brand-text {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 5rem;
+  color: black;
+}
+
+#brand-text > h6 {
+  margin: 0;
+  position: relative;
+  top: -0.8rem;
+  text-transform: uppercase;
+  font-size: 9pt;
+}
+
+/* blockquote */
+
+blockquote {
+  font-family: "MuseoSans";
+  border-left: 5px solid #ecc829;
+}
+
+#blockquote-container {
+  margin: 150px auto;
+}
+
+/* Texto Parallax */
+
+.parallax-container {
+  height: 500px;
+}
+
+.parallax-container > h1 {
+  position: relative;
+  margin: 0 auto;
+  max-width: 50%;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#imagen-parallax {
+  filter: gray;
+  filter: grayscale(100%);
+}
+
+/* Servicios */
+
+h5 {
+  color: gray;
+}
+
+#servicios {
+  margin: 5rem auto;
+}
+
+#servicios > .row {
+  margin: 150px auto;
+  height: 450px;
+}
+
+#servicios > .row > .col {
+  height: 100%;
+}
+
+#servicios > .row > .col > h2 {
+  margin-top: 0px;
+}
+
+#servicios > .row > .col > ul {
+  list-style: circle;
+}
+
+#servicios > .row > .col > .responsive-img {
+  position: relative;
+  width: 600px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Footer */
+
+.page-footer {
+  background-color: #333331;
+}
+
+iframe {
+  width: auto;
+}
