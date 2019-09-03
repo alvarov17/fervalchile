@@ -96,31 +96,16 @@ h5 {
 }
 
 #servicios {
-  margin: 5rem auto;
+  margin: 150px auto;
 }
 
 #servicios > .row {
-  margin: 150px auto;
-  height: 450px;
-}
-
-#servicios > .row > .col {
-  height: 100%;
-}
-
-#servicios > .row > .col > h2 {
-  margin-top: 0px;
-}
-
-#servicios > .row > .col > ul {
-  list-style: circle;
+  height: 500px;
 }
 
 #servicios > .row > .col > .responsive-img {
   position: relative;
-  width: 600px;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 100px;
 }
 
 /* Footer */
@@ -130,5 +115,32 @@ h5 {
 }
 
 iframe {
+  height: auto;
   width: auto;
+}
+
+@media only screen and (max-width: 993px) {
+  .brand-logo {
+    position: relative;
+    bottom: 0px;
+  }
+
+  #brand-text {
+    display: none;
+  }
+
+  #blockquote-container {
+    margin: 3rem auto;
+  }
+
+  #servicios {
+    margin: 2rem auto;
+  }
+
+  #servicios > .row {
+    height: auto;
+  }
+  #servicios > .row > .col > .responsive-img {
+    display: none;
+  }
 }
